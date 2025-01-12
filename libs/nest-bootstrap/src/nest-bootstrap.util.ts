@@ -3,7 +3,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ConfigService } from '@nestjs/config';
 import * as cookieParser from 'cookie-parser';
 import * as dayjs from 'dayjs';
-import { ISwaggerOptions } from './nestjs-bootstrap.interface';
+import { ISwaggerOptions } from './nest-bootstrap.interface';
 import * as yaml from 'js-yaml';
 import { readFileSync } from 'fs';
 import * as bodyParser from 'body-parser';

@@ -1,5 +1,17 @@
 # Changelog
 
+# [0.2.0](https://github.com/miyou2024/nest-bootstrap/compare/0.1.0...0.2.0) (2025-01-12)
+
+
+### Bug Fixes
+
+* rename bug ([bcc807b](https://github.com/miyou2024/nest-bootstrap/commit/bcc807b46e5f43e38b26ee08c22a435d3df6d0d4))
+
+
+### Features
+
+* add configuration ([19c9897](https://github.com/miyou2024/nest-bootstrap/commit/19c9897389618002bb61dc6bd7dbce9544fce751))
+
 # 0.1.0 (2025-01-12)
 
 

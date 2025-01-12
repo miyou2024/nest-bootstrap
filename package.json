@@ -1,15 +1,15 @@
 {
-  "name": "@ittlr/nestjs-bootstrap",
+  "name": "@ittlr/nest-bootstrap",
   "version": "0.0.0",
   "description": "nestjs bootstrap library",
   "author": "Miyou2024",
   "license": "UNLICENSED",
-  "main": "./dist/libs/nestjs-bootstrap/index.js",
+  "main": "./dist/libs/nest-bootstrap/index.js",
   "exports": {
     ".": {
-      "types": "./dist/libs/nestjs-bootstrap/index.d.js",
-      "import": "./dist/libs/nestjs-bootstrap/index.js",
-      "require": "./dist/libs/nestjs-bootstrap/index.js"
+      "types": "./dist/libs/nest-bootstrap/index.d.js",
+      "import": "./dist/libs/nest-bootstrap/index.js",
+      "require": "./dist/libs/nest-bootstrap/index.js"
     }
   },
   "publishConfig": {
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "release": "npm run lib:build && release-it",
-    "lib:build": "rimraf dist && tsc -p libs/nestjs-bootstrap/tsconfig.lib.json",
+    "lib:build": "rimraf dist && tsc -p libs/nest-bootstrap/tsconfig.lib.json",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start",
@@ -90,7 +90,7 @@
       "<rootDir>/libs/"
     ],
     "moduleNameMapper": {
-      "^@ittlr/nestjs-bootstrap(|/.*)$": "<rootDir>/libs/nestjs-bootstrap/src/$1"
+      "^@ittlr/nest-bootstrap(|/.*)$": "<rootDir>/libs/nest-bootstrap/src/$1"
     }
   }
 }

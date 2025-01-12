@@ -18,11 +18,11 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@ittlr/nestjs-bootstrap": [
-        "libs/nestjs-bootstrap/src"
+      "@ittlr/nest-bootstrap": [
+        "libs/nest-bootstrap/src"
       ],
-      "@ittlr/nestjs-bootstrap/*": [
-        "libs/nestjs-bootstrap/src/*"
+      "@ittlr/nest-bootstrap/*": [
+        "libs/nest-bootstrap/src/*"
       ]
     }
   }

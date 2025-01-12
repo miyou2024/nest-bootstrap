@@ -7,13 +7,13 @@
     "webpack": true
   },
   "projects": {
-    "nestjs-bootstrap": {
+    "nest-bootstrap": {
       "type": "library",
-      "root": "libs/nestjs-bootstrap",
+      "root": "libs/nest-bootstrap",
       "entryFile": "index",
-      "sourceRoot": "libs/nestjs-bootstrap/src",
+      "sourceRoot": "libs/nest-bootstrap/src",
       "compilerOptions": {
-        "tsConfigPath": "libs/nestjs-bootstrap/tsconfig.lib.json"
+        "tsConfigPath": "libs/nest-bootstrap/tsconfig.lib.json"
       }
     }
   }

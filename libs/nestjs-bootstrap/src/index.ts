@@ -1,2 +1,2 @@
-export * from './nestjs-bootstrap.module';
-export * from './nestjs-bootstrap.service';
+export * from './nest-bootstrap.module';
+export * from './nest-bootstrap.service';

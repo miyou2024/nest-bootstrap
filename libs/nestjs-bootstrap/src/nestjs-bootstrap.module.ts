@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { NestjsBootstrapService } from './nestjs-bootstrap.service';
+import { NestBootstrapService } from './nest-bootstrap.service';
 
 @Module({
-  providers: [NestjsBootstrapService],
-  exports: [NestjsBootstrapService],
+  providers: [NestBootstrapService],
+  exports: [NestBootstrapService],
 })
-export class NestjsBootstrapModule {}
+export class NestBootstrapModule {}

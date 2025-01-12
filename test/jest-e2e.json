@@ -11,7 +11,7 @@
     "^.+\\.(t|j)s$": "ts-jest"
   },
   "moduleNameMapper": {
-    "@ittlr/nestjs-bootstrap/(.*)": "<rootDir>/../libs/nestjs-bootstrap/src/$1",
-    "@ittlr/nestjs-bootstrap": "<rootDir>/../libs/nestjs-bootstrap/src"
+    "@ittlr/nest-bootstrap/(.*)": "<rootDir>/../libs/nest-bootstrap/src/$1",
+    "@ittlr/nest-bootstrap": "<rootDir>/../libs/nest-bootstrap/src"
   }
 }

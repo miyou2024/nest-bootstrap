@@ -3,3 +3,4 @@ export * from './nest-bootstrap.service';
 export * from './nest-bootstrap.util';
 export * from './nest-bootstrap.interface';
 export * from './decorator';
+export * from './pipe';

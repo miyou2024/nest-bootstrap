@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.2](https://github.com/miyou2024/nest-bootstrap/compare/0.2.1...0.2.2) (2025-01-13)
+
+
+### Bug Fixes
+
+* export pipe from entry ([d84c81e](https://github.com/miyou2024/nest-bootstrap/commit/d84c81e254b4854d22d5a77514c07afc17ab9bb9))
+* update example ([2b960e6](https://github.com/miyou2024/nest-bootstrap/commit/2b960e6b85000d8107536b0447156ed383ab0d89))
+
+
+### Features
+
+* add example ([773ea65](https://github.com/miyou2024/nest-bootstrap/commit/773ea65ce7929b2529a5e76109a4787e5df26a57))
+* add transform-reponse interceptor, validate pipe ([687a21e](https://github.com/miyou2024/nest-bootstrap/commit/687a21e35942cc2795de95532510ee649c47b742))
+* merge api decorators ([4c440e6](https://github.com/miyou2024/nest-bootstrap/commit/4c440e693f99dc5f744d16eb3a3458e399c17651))
+
 ## [0.2.1](https://github.com/miyou2024/nest-bootstrap/compare/0.2.0...0.2.1) (2025-01-13)
 
 

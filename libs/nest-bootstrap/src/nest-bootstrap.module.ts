@@ -1,8 +1,11 @@
+import { APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 import { ConfigModule } from '@nestjs/config';
+import { DynamicModule, ForwardReference, Module, Type } from '@nestjs/common';
 import { ScheduleModule } from '@nestjs/schedule';
 import { INestBootstrapOptions } from './nest-bootstrap.interface';
-import { DynamicModule, ForwardReference, Module, Type } from '@nestjs/common';
 import { NestBootstrapService } from './nest-bootstrap.service';
+import { ValidationPipe } from './pipe';
+import { TransformResponseInterceptor } from './interceptor';
 
 @Module({})
 export class NestBootstrapModule {
@@ -32,7 +35,17 @@ export class NestBootstrapModule {
       global: true,
       module: NestBootstrapModule,
       imports: [...moduleImports],
-      providers: [NestBootstrapService],
+      providers: [
+        {
+          provide: APP_PIPE,
+          useClass: ValidationPipe,
+        },
+        {
+          provide: APP_INTERCEPTOR,
+          useClass: TransformResponseInterceptor,
+        },
+        NestBootstrapService,
+      ],
       exports: [NestBootstrapService],
     };
   }

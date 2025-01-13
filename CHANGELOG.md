@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/miyou2024/nest-bootstrap/compare/0.2.0...0.2.1) (2025-01-13)
+
+
+### Features
+
+* add nest-scheduler, delete dayjs ([f1b9bda](https://github.com/miyou2024/nest-bootstrap/commit/f1b9bdaf263dd9eefc0262f6f47169dc0e8bc679))
+
 # [0.2.0](https://github.com/miyou2024/nest-bootstrap/compare/0.1.0...0.2.0) (2025-01-12)
 
 

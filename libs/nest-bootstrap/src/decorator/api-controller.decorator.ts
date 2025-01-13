@@ -7,6 +7,6 @@ import { ApiTags } from '@nestjs/swagger';
  * @param tag -> ApiTags
  * @constructor
  */
-export function ApiControllerDecorator(path: string, tag: string) {
+export function ApiController(path: string, tag: string) {
   return applyDecorators(Controller(path), ApiTags(tag));
 }

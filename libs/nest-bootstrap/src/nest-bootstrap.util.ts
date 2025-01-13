@@ -2,7 +2,6 @@ import { INestApplication, Logger, ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ConfigService } from '@nestjs/config';
 import * as cookieParser from 'cookie-parser';
-import * as dayjs from 'dayjs';
 import { ISwaggerOptions } from './nest-bootstrap.interface';
 import * as yaml from 'js-yaml';
 import { readFileSync } from 'fs';
@@ -44,7 +43,7 @@ export async function startApp(app: INestApplication) {
     [nodeEnv=${serverConfig.nodeEnv}]
     [cloudEnv=${serverConfig.cloudEnv}]
     `,
-    versionParam: dayjs().format('YYYY-MM-DD HH:mm:ss'),
+    versionParam: new Date().toString(),
   });
   await app.listen(serverConfig.httpPort);
   Logger.log(

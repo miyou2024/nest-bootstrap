@@ -1,0 +1,54 @@
+server:
+  nodeEnv: development
+  cloudEnv: local
+  httpApiPrefix: 'api'
+  httpPort: 10110
+  swaggerPath: 'docs'
+  swaggerTitle: 'swagger title'
+  swaggerDesc: 'swagger desc'
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: 123456
+  database: test
+
+mongodb:
+  host: 127.0.0.1
+  port: 27017
+  username: root
+  password: 123456
+  database: test
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  db: 0
+  password: 123456
+
+
+es:
+  protocol: https
+  host: 127.0.0.1
+  port: 9200
+  username: elastic
+  password: elastic
+
+
+rabbit:
+  host: 127.0.0.1:5672
+  user: rabbitmq
+  passwd: rabbitmq
+
+email:
+  from: '"系统" <admin@admin.com>'
+  smtp:
+    host: smtp.qiye.aliyun.com
+    port: 465
+    secure: true
+  auth:
+    user: madmin
+    pass: 123456
+
+

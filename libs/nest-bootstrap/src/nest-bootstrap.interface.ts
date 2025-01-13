@@ -3,23 +3,11 @@ import { ExternalDocumentationObject } from '@nestjs/swagger/dist/interfaces/ope
 
 export interface INestBootstrapOptions {
   configOptions?: ConfigModuleOptions;
-  redisOptions?: IBootstrapRedisOptions;
-  elasticSearchOptions?: IBootstrapElasticSearchOptions;
   scheduler?: IBootstrapSchedulerOptions;
 }
 
 export interface IBootstrapSchedulerOptions {
   enabled?: boolean;
-}
-
-export interface IBootstrapElasticSearchOptions {
-  enabled: boolean;
-  configKey?: string;
-}
-
-export interface IBootstrapRedisOptions {
-  enabled: boolean;
-  redisKey?: string;
 }
 
 /**

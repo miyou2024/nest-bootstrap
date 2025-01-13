@@ -1,4 +1,5 @@
 import { ConfigModule } from '@nestjs/config';
+import { ScheduleModule } from '@nestjs/schedule';
 import { INestBootstrapOptions } from './nest-bootstrap.interface';
 import { DynamicModule, ForwardReference, Module, Type } from '@nestjs/common';
 import { NestBootstrapService } from './nest-bootstrap.service';
@@ -21,6 +22,10 @@ export class NestBootstrapModule {
           });
           moduleImports.push(configImportModule);
         }
+      }
+
+      if (options.scheduler && options.scheduler.enabled) {
+        moduleImports.push(ScheduleModule.forRoot());
       }
     }
     return {
